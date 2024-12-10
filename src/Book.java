@@ -18,22 +18,25 @@ class Book {
         this.isAvailable = true;
     }
 
-    public void borrowBook(){ //забрал книгу
-        if(isAvailable){
+    public void borrowBook() { //забрал книгу
+        if (isAvailable) {
             isAvailable = false;
             System.out.println("Вы забрали книгу");
-        }else{
+        } else {
             System.out.println("Книга не доступна");
         }
     }
-    void returnBook(){ //вернул книгу
+
+    void returnBook() { //вернул книгу
         isAvailable = true;
         System.out.println("Вы вернули книгу");
     }
-    void displayInfo(){ //выводит на экран информацию о книге
-        System.out.format("Название книги: %s\nАвтор: %s\nГод выпуска: %d\nОна в бибилиотеке? %b \n", title, author, year, isAvailable );
+
+    void displayInfo() { //выводит на экран информацию о книге
+        System.out.format("Название книги: %s\nАвтор: %s\nГод выпуска: %d\nОна в бибилиотеке? %b \n", title, author, year, isAvailable);
     }
-@Override
+
+    @Override
     public String toString() {
         return String.format("Название: %s, Автор: %s, Год: %d, Доступна: %b",
                 title, author, year, isAvailable);

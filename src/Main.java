@@ -6,7 +6,7 @@ public class Main {
 
         Book book1 = new Book("И никого не стало", "Агата Кристи");
         Book book2 = new Book("Гарри Поттер и философский камень", "Джоан Роулинг", 1997, false);
-        Book book3 = new Book("Властелин колец","Джон Рональд Руэл Толкин", 1954, false);
+        Book book3 = new Book("Властелин колец", "Джон Рональд Руэл Толкин", 1954, false);
 
         library.addBook(book1);
         library.addBook(book2);
